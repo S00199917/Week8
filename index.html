@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A website that allows people to contact the owner">
+        <meta name="keywords" content="form, email, sky, reasons">
+        <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+    </head>
+    
+    <body>
+        <header>
+            <p>
+                Any queries or feed back please complet and submit (position realtive 10px from top | -center)
+            </p>
+        </header>
+        
+        <main>
+            <section>
+                <h3>Please enter the following information: (form action"http://year1.ccpdev.me/FormTest.php" method="get" or method="post")</h3>
+                
+                <form action="http://year1.ccpdev.me/FormTest.php" method="post">
+                    <label for="first_name">First name:<span class="required">*</span></label>
+                    <input type="text" name="first_name" id="first_name" autofocus required><br>
+                    <lable for="last_name">Last name:<span class="required">*</span></lable>
+                    <input type="text" name="last_name" id="last_name" required><br>
+                    <lable for="email">Email:<span class="required">*</span></lable>
+                    <input type="email" name="email" id="email" required placeholder="johndo@example.com"><br>
+                    
+                    <lable for="gender">Gender: </lable>
+                    <input type="radio" id="gender" name="gender" value="male">Male
+                    <input type="radio" id="gender" name="gender" value="female">Female
+                    <input type="radio" id="gender" name="gender" value="other" checked>Other<br>
+                    
+                    <lable for="internet">heard of us:</lable>
+                    <fieldset>
+                        <input type="checkbox" id="internet" name="internet" value="internet" checked>Internt<br>
+                        <input type="checkbox" class="marginl" id="hearr" name="paper" value="paper">Newspaper<br>
+                        <input type="checkbox" class="marginl" id="hear" name="friend" vlaue="friend">Friend<br>
+                        <input type="checkbox" class="marginl" id="hear" name="Add" value="Add">Others<br>
+                    </fieldset>
+                    <br>
+                    <lable for="message">Query: </lable>
+                    <textarea cols="40" rows="6" id="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlenght="200"></textarea><br>
+                    
+                    <input type="submit" name="submit" id="button" value="Submit">
+                    <input type="reset" name="reset" id="reset">
+                </form>
+                
+                <p style="margin-left: 138px"><span class="required">*<em>indicates a required field</em></span></p>
+            </section>
+        </main>
+    </body>
+</html>

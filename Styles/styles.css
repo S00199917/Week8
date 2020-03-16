@@ -1,0 +1,49 @@
+body{
+    background-image: url(../Images/Saint_Peters.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+}
+
+main{
+    margin: 15px 200px;
+    padding: 20px;
+    border: solid black;
+    background: white;
+    min-height: 500px;
+}
+
+header p{
+    position: relative;
+    top: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+label{
+    float: left;
+    width: 112px;
+    padding-right:10px;
+    text-align: right;
+}
+
+input{
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 220px;
+}
+
+input[type="radio"]{
+    width: 10px;
+}
+
+input[type="checkbox"]{
+    width: 15px;
+}
+
+.required {
+    font-weight: bold;
+    color: red;
+}
+
+#
